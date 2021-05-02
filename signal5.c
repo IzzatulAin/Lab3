@@ -38,7 +38,7 @@ else if(pid>0){
 wait(NULL);
 close(pipefds[1]);
 read(pipefds[0], &buffer, sizeof(buffer));
-for(i=2; i<=buffer/2; ++1){
+for(i=2; i<=buffer/2; ++i){
 if(buffer % i==0){
 flag=1;
 break;
